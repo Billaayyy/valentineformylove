@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valentine's Day</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Font: Pacifico -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"/>
+    <link rel="icon" type="image/png" href="public/heartemo.png" />
+
+  </head>
+  <body>
+    <!-- Slide 1: Intro -->
+    <div class="slide" id="slide1">
+      <div class="content">
+        <div class="header">
+          <img src="public/heartemo.png" alt="Sparkling Heart" class="icon" />
+          <div class="title">
+            <h2>Happy</h2>
+            <h1>Valentine's<br>Day</h1>
+          </div>
+          <img src="public/heartemo.png" alt="Sparkling Heart" class="icon" />
+        </div>
+        <p class="subtitle">
+          Get ready for a little journey through our sweetest memories
+        </p>
+        <div class="button-container">
+          <img src="public/catthing.gif" alt="Pixel Cat Animation" class="cat-gif" />
+          <button class="play-button" id="playButton">
+            <span>Play! <i class="arrow">&rarr;</i></span>
+          </button>
+          <img src="public/catthing.gif" alt="Pixel Cat Animation" class="cat-gif" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2: Pictures + Short Typewriter Text -->
+<div class="slide hidden" id="slide2">
+    <div class="picture-grid" id="pictureGrid">
+      <div class="picture-block">
+        <img src="public/menjena1.jpg" alt="Me and my girl" class="my-girl-image">
+      </div>
+      <div class="picture-block">
+        <img src="public/menjena2.jpg" alt="Another beautiful pic" class="my-girl-image">
+      </div>
+      <div class="picture-block">
+        <img src="public/jena1.jpg" alt="Ayaangg cantik" class="my-girl-image">
+      </div>
+      <div class="picture-block">
+        <img src="public/jena2.jpg" alt="Ayaangg ngambek hehe" class="my-girl-image">
+      </div>
+    </div>
+    <p class="short-typewriter hidden" id="shortTypewriterText">
+      Look at your beautiful face hihihi love love
+    </p>
+  </div>
+  
+
+    <!-- Slide 3: Long Typewriter Text with Proceed Button -->
+    <div class="slide hidden" id="slide3">
+      <div class="text-container">
+        <p id="slide3Text"></p>
+      </div>
+      <button id="proceedButton" class="proceed-button hidden">Proceed</button>
+    </div>
+
+    <!-- Slide 4: Surprise Slide with Animated Loading Dots -->
+    <div class="slide hidden" id="slide4">
+      <div class="surprise-text">
+        Your valentine gifts are
+        <span class="loading-dots">
+          <span class="dot">.</span>
+          <span class="dot">.</span>
+          <span class="dot">.</span>
+        </span>
+      </div>
+    </div>
+
+    <!-- Slide 5: Gacha Screen -->
+    <div class="slide hidden" id="slide5">
+      <div class="gacha-container" id="gachaContainer">
+        <div class="gacha-item hidden" id="item1">
+          <img
+            src="https://i.pinimg.com/236x/31/12/95/31129587f04db093ed40b85189e88b31.jpg"
+            alt="Cookies made by your man"
+            class="gacha-image"
+          />
+          <div class="gacha-title">Cookies made by your man</div>
+        </div>
+        <div class="gacha-item hidden" id="item2">
+          <img
+            src="https://i.pinimg.com/236x/ff/c4/33/ffc433c50412e8482f405f4a31f75825.jpg"
+            alt="A LOTS OF KISSESS"
+            class="gacha-image"
+          />
+          <div class="gacha-title">A LOTS OF KISSESS</div>
+        </div>
+        <div class="gacha-item hidden" id="item3">
+          <img
+            src="https://i.pinimg.com/236x/3a/b4/83/3ab483136d2f1257b72e615d49e3e37b.jpg"
+            alt="Having fun at a hotel"
+            class="gacha-image"
+          />
+          <div class="gacha-title">Having fun at a hotel</div>
+        </div>
+      </div>
+      <!-- Global instructions (visible until all items are revealed) -->
+      <div class="gacha-instructions" id="gachaInstructions">
+        Tap anywhere to proceed...
+      </div>
+      <div class="gacha-buttons hidden" id="gachaButtons">
+        <button class="take-button" id="takeButton">I'll Take it &lt;3</button>
+        <button class="no-button" id="noButton">Ew, No.</button>
+      </div>
+    </div>
+
+<!-- Slide 6: Final Slide -->
+<div class="slide hidden" id="slide6">
+    <h1>That's A YES!!!</h1>
+    <div id="confettiContainer"></div>
+    <div id="finalText">I Love you so much Jena <3</div>
+    <div id="cycleText" class="cycle-text"></div>
+  </div>  
+
+    <script src="script.js"></script>
+  </body>
+</html>
